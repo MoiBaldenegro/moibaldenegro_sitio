@@ -1,50 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/sections/Header.astro";
+import LeftAside from "../components/sections/LeftAside.astro";
+import Banner from "../components/sections/Banner.astro";
+import RightAside from "../components/sections/RightAside.astro";
+import Main from "../components/sections/Main.astro";
+import LowContent from "../components/sections/LowContent.astro";
+import Footer from "../components/sections/Footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <header id="header">HEADER</header>
-  <aside id="left-aside">LEFT-ASIDE</aside>
-  <section id="banner">BANNER</section>
-  <aside id="right-aside">RIGHT-ASIDE</aside>
-  <main id="main">MAIN</main>
-  <section id="low-content">LOW-CONTENT</section>
-  <footer id="footer">FOOTER</footer>
+  <Header />
+  <LeftAside />
+  <Banner />
+  <RightAside />
+  <Main />
+  <LowContent />
+  <Footer />
 </Layout>
-
-<style>
-  #header {
-    grid-area: header;
-    outline: 2px solid red;
-  }
-
-  #left-aside {
-    grid-area: left-aside;
-    outline: 2px solid #00ff2a;
-  }
-
-  #banner {
-    grid-area: banner;
-    outline: 2px solid #3700ff;
-  }
-
-  #right-aside {
-    grid-area: right-aside;
-    outline: 2px solid #ff006a;
-  }
-
-  #main {
-    grid-area: main;
-    outline: 2px solid #00fff2;
-  }
-
-  #low-content {
-    grid-area: low-content;
-    outline: 2px solid #b68e9f;
-  }
-
-  #footer {
-    grid-area: footer;
-    outline: 2px solid #e9ec27;
-  }
-</style>
