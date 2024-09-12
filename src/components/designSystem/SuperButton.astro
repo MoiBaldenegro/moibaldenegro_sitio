@@ -1,65 +1,70 @@
 ---
 const { text, color, fontSize, fontFamily } = Astro.props;
 
-// styles 
+// styles
 const BLUE_GRADIENT = "blue-gradient";
 const RED_GRADIENT = "red-gradient";
 const GREEN_GRADIENT = "green-gradient";
 const PURPLE_GRADIENT = "purple-gradient";
 
 // selected gradient
-const SELECTED_GRADIENT = color === RED_GRADIENT 
+const SELECTED_GRADIENT =
+  color === RED_GRADIENT
     ? "linear-gradient(150deg, #6a040f, #9d0208, #d00000)"
-    : color === GREEN_GRADIENT 
-    ? "linear-gradient(150deg, #008000, #38b000, #70e000)"
-    : color === PURPLE_GRADIENT 
-    ? "linear-gradient(150deg, #6f2dbd, #a663cc, #b298dc)"
-    : "linear-gradient(150deg, #9500ff, #09f, #00DDFF)";
+    : color === GREEN_GRADIENT
+      ? "linear-gradient(150deg, #008000, #38b000, #70e000)"
+      : color === PURPLE_GRADIENT
+        ? "linear-gradient(150deg, #6f2dbd, #a663cc, #b298dc)"
+        : "linear-gradient(150deg, #9500ff, #09f, #00DDFF)";
 
 const FONT_SIZE = fontSize ?? "18px";
 const FONT_FAMILY = fontFamily ?? "system-ui";
 ---
-<button 
-    class="super-button"
-    style={`background-image: ${SELECTED_GRADIENT}; 
+
+<button
+  class="super-button"
+  style={`background-image: ${SELECTED_GRADIENT}; 
             font-size: ${FONT_SIZE};
-            font-family: ${FONT_FAMILY};`}>
-    <span>{text}</span>
+            font-family: ${FONT_FAMILY};`}
+>
+  <span>{text}</span>
 </button>
 <style>
+  .super-button {
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+    transition: 250ms;
+
+    & span {
+      background-color: rgba(0, 0, 0, 0.324);
+      padding: 16px 24px;
+      border-radius: 8px;
+      transition: 250ms;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.126);
+    }
+
+    &:hover,
+    span:hover {
+      background-image: none;
+      box-shadow: 1px 1px 1px 1px transparent;
+    }
+  }
+
+  .super-button:active {
+    transform: scale(0.9);
+  }
+
+  .super-button:hover span {
+    background: none;
+  }
+
+  @media (max-width: 678px) {
     .super-button {
-        border: 0;
-        border-radius: 8px;
-        color: white;
-        display: flex;
-        padding: 4px;
-        cursor: pointer;
-        transition: 250ms ;
-
-        & span {
-            background-color: #111;
-            padding: 16px 24px;
-            border-radius: 8px;
-            transition: 250ms ;
-        }
-
-        &:hover {
-            background-image: none;
-        }
-    }
-
-    .super-button:active {
-        transform: scale(0.9);
-    }
-
-    .super-button:hover span {
-        background: none;
-    }
-
-    @media (max-width: 678px) {
-    .super-button {
-        display: none;
+      display: none;
     }
   }
 </style>
-
