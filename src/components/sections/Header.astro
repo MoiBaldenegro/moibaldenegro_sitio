@@ -2,19 +2,30 @@
 import SuperButton from "../designSystem/SuperButton.astro";
 import Nav from "../Nav.astro";
 ---
-<header id="header">HEADER
+
+<header id="header">
   <Nav />
   <SuperButton text={"CONTRATACIONES"} color={"purple-gradient"} />
 </header>
 <style>
-    #header {
+  #header {
     grid-area: header;
-    outline: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 8px;
+    nav {
+      margin-left: 32px;
+    }
 
+    ul {
+      display: flex;
+      gap: 32px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
- 
 </style>
