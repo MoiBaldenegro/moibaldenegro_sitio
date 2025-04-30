@@ -21,6 +21,7 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+  @import "tailwindcss";
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -84,7 +85,7 @@ const { title } = Astro.props;
   }
   body {
     display: grid;
-    grid-template-rows: 5rem auto 1fr auto 5rem;
+    grid-template-rows: 45px auto 1fr auto 5rem;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header header header"
