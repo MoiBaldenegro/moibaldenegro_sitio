@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+    --color-moises: #ff6347; /* Example color */
+    /* breakpoint */
+    --breakpoint-moi-sm: 640px;
+  }

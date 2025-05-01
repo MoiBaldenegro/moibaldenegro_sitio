@@ -1,0 +1,19 @@
+---
+const {label} = Astro.props;
+---
+<span class="
+        text-sky-400 text-xl
+        font-mono px-3 py-1
+        border border-sky-500/50 rounded-full flex items-center justify-center shadow-sm
+        bg-black/65
+        cursor-crosshair
+        z-10
+        gap-2
+      ">
+        {label}
+        <svg class="ml-1 w-5 h-5 text-sky-400 inline" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707a1 1 0 00-1.414-1.414L9 11.172l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>

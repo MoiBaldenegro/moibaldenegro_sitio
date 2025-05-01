@@ -1,23 +1,27 @@
-<section id="banner">
-  <img class=" h-120 object-cover mask-radial-at-center mask-radial-from-25% mask-radial-to-75%" src="assets/moises-hero.jpg" alt="moises">
+---
+import BentoBanner from "../core/BentoBanner.astro";
+import Socials from "../core/Socials.astro";
+import NicknameBatch from "../designSystem/Button/Batch/NicknameBatch.astro";
+---
 
- 
+<section id="banner" class="flex gap-2 items-center rounded">
+  <div class="flex-8 h-full relative">
+    <img class=" h-120 object-cover rounded mask-b-from-5% mask-b-to-95%" src="assets/moises-hero.jpg" alt="moises">
+    <div class="absolute right-2 bottom-70">
+    <Socials classname="flex flex-col"/>
+    </div>
+    <h1 class="text-4xl font-extrabold">Moisés Baldenegro Melendez</h1>
+    <div class=" absolute right-2 bottom-34 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <NicknameBatch label="@moibaldenegro"/>
+    </div>
+    <!-- <p>Divulgador de programacion y creador de contenido de desarrollo seguro.</p> -->
+    <p>Software engineering l Rust l Web Assembly |
+       Web Developer | Multiplatform |
+       Devops infrastructure as code AWS / Microsoft Azure - Rustacean 🦀|
+       Security first OWASP</p>
+  </div>
+  <div class="flex-12 h-full">
+    <BentoBanner />
+  </div>
 </section>
-<style>
-  #banner {
-    grid-area: banner;
-    border: 1px solid red;
 
-    >header{
-      border: 1px solid yellow;
-    }
-
-    >main{
-      border: 1px solid blue;
-    }
-
-    >footer{
-      border: 1px solid white;
-    }
-  }
-</style>

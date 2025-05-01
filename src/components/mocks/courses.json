@@ -1,0 +1,50 @@
+[  {
+    "id": 1,
+    "name": "React",
+    "description": "Description for Course 1",
+    "image": "https://via.placeholder.com/150",
+    "price": 100,
+    "rating": 4.5,
+    "category": "Category 1",
+    "imageId": "react"
+},
+{
+    "id": 2,
+    "name": "Course 2",
+    "description": "Description for Course 2",
+    "image": "https://via.placeholder.com/150",
+    "price": 200,
+    "rating": 4.0,
+    "category": "Category 2",
+    "imageId": "course2"
+},
+{
+    "id": 3,
+    "name": "Course 3",
+    "description": "Description for Course 3",
+    "image": "https://via.placeholder.com/150",
+    "price": 300,
+    "rating": 3.5,
+    "category": "Category 3",
+    "imageId": "course3"
+},
+{
+    "id": 4,
+    "name": "Course 4",
+    "description": "Description for Course 4",
+    "image": "https://via.placeholder.com/150",
+    "price": 400,
+    "rating": 5.0,
+    "category": "Category 4",
+    "imageId": "course4"
+},
+{
+    "id": 5,
+    "name": "Course 5",
+    "description": "Description for Course 5",
+    "image": "https://via.placeholder.com/150",
+    "price": 500,
+    "rating": 4.8,
+    "category": "Category 5",
+    "imageId": "course5"
+} ]

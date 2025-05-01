@@ -1,0 +1,36 @@
+---
+const { classname } = Astro.props;
+---
+
+<section class=`absolute  gap-2  bottom-2 right-2 ${classname}`>
+<a href="https://www.twitch.tv/" target="_blank" class="bg-white p-3 rounded-full flex items-center justify-center size-[48px]  hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#twitch"/>
+    </svg>
+</a>
+<a href="https://github.com/"  target="_blank" class="bg-black p-3 rounded-full flex items-center justify-center size-[48px] hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#github"/>
+    </svg>
+</a>
+<a href="https://www.instagram.com/" target="_blank" class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 p-3 rounded-full flex items-center justify-center size-[48px] hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#instagram"/>
+    </svg>
+</a>
+<a href="https://www.linkedin.com/" target="_blank" class="bg-white p-3 rounded-full flex items-center justify-center size-[48px] hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#linkedin"/>
+    </svg>
+</a>
+<a href="https://www.youtube.com/" target="_blank" class="bg-white p-3 rounded-full flex items-center justify-center size-[48px] hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#youtube"/>
+    </svg>
+</a>
+<a href="https://twitter.com/" target="_blank" class="bg-black p-3 rounded-full flex items-center justify-center size-[48px] hover:scale-110 transition-transform">
+ <svg width="32px" height="32px">
+      <use xlink:href="assets/svg/sprite.svg#x"/>
+    </svg>
+</a>
+</section>
