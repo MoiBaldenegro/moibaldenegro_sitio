@@ -4,9 +4,9 @@ import Socials from "../core/Socials.astro";
 import NicknameBatch from "../designSystem/Button/Batch/NicknameBatch.astro";
 ---
 
-<section id="banner" class="flex gap-2 items-center rounded">
+<section id="banner" class="flex flex-col md:flex-row  gap-2 items-center rounded">
   <div class="flex-8 h-full relative">
-    <img class=" h-120 object-cover rounded mask-b-from-5% mask-b-to-95%" src="assets/moises-hero.jpg" alt="moises">
+    <img class="h-120 object-cover rounded mask-b-from-5% mask-b-to-95%" src="assets/moises-hero.jpg" alt="moises">
     <div class="absolute right-2 bottom-70">
     <Socials classname="flex flex-col"/>
     </div>
@@ -20,7 +20,7 @@ import NicknameBatch from "../designSystem/Button/Batch/NicknameBatch.astro";
        Devops infrastructure as code AWS / Microsoft Azure - Rustacean 🦀|
        Security first OWASP</p>
   </div>
-  <div class="flex-12 h-full">
+  <div class="flex-12 h-full w-full">
     <BentoBanner />
   </div>
 </section>

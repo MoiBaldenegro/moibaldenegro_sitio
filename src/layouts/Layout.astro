@@ -76,7 +76,7 @@ const { title } = Astro.props;
     width: 100vw;
     /* bg-slate-950 de Tailwind */
     /* Crear un pseudo-elemento que cubra todo el body */
-    overflow: hidden;
+    overflow: auto;
     z-index: 1;
   }
 
@@ -94,7 +94,6 @@ const { title } = Astro.props;
 
   @media (max-width: 678px) {
     body {
-      grid-template-rows: 3rem 3rem 3rem 1fr 3rem 3rem 3rem;
       grid-template-columns: 1fr;
       grid-template-areas:
         "header"
