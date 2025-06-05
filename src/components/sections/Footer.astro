@@ -1,4 +1,18 @@
-<footer id="footer">FOOTER</footer>
+---
+import Socials from "../core/Socials.astro";
+---
+
+<footer
+  id="footer"
+  class="bg-gray-800 text-white py-8 text-center"
+>
+  <div class="container mx-auto">
+    <p class="mb-4">&copy; 2024 Your Name/Project</p>
+    <div class="flex justify-center">
+      <Socials classname="relative" />
+    </div>
+  </div>
+</footer>
 <style>
   #footer {
     grid-area: footer;
