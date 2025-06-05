@@ -2,7 +2,7 @@
 const { classname } = Astro.props;
 ---
 
-<section class=`absolute  gap-2  bottom-2 right-2 ${classname}`>
+<section class=`gap-2  ${classname} flex`>
 <a href="https://www.twitch.tv/" target="_blank" class="bg-white p-3 rounded-full flex items-center justify-center size-[48px]  hover:scale-110 transition-transform">
  <svg width="32px" height="32px">
       <use xlink:href="assets/svg/sprite.svg#twitch"/>

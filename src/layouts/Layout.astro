@@ -16,7 +16,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-gradient-to-b from-gray-950  to-gray-800">
+  <body>
     <slot />
   </body>
 </html>
@@ -37,16 +37,18 @@ const { title } = Astro.props;
       white 60%
     );
   }
-  * {
-    margin: 0px;
-    box-sizing: border-box;
-  }
+ 
   html {
-    width: 100vw;
-    height: 100vh;
+    
     font-family: system-ui, sans-serif;
     color: #ddd;
     text-align: center;
+
+    >* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
     
   }
   html::before {
@@ -61,19 +63,17 @@ const { title } = Astro.props;
   }
   body {
     display: grid;
-    grid-template-rows: 45px auto 1fr auto 5rem;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 45px auto auto auto 5rem;
     grid-template-areas:
       "header header header"
       "left-aside banner right-aside"
       "left-aside main right-aside"
       "left-aside low-content right-aside"
       "footer footer footer";
-      gap: 8px
+      background-color: rgba(0, 0, 0, 0.972);
   }
   body {
-    height: 100vh;
-    width: 100vw;
     /* bg-slate-950 de Tailwind */
     /* Crear un pseudo-elemento que cubra todo el body */
     overflow: auto;
@@ -92,7 +92,7 @@ const { title } = Astro.props;
       monospace;
   }
 
-  @media (max-width: 678px) {
+  @media (max-width: 1020px) {
     body {
       grid-template-columns: 1fr;
       grid-template-areas:
