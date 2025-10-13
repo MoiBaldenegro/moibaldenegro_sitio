@@ -78,7 +78,16 @@ const { title } = Astro.props;
     mask-repeat: no-repeat;
     mask-size: 250px;
     animation: reveal 3s forwards ease-in-out;
-  }
+
+    -webkit-mask-image: url("/assets/svg/billie_logo.svg");
+  mask-image: url("/assets/svg/billie_logo.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 250px;
+  mask-size: 250px;
+}
   body {
     /* bg-slate-950 de Tailwind */
     /* Crear un pseudo-elemento que cubra todo el body */
