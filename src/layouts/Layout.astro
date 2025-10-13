@@ -72,6 +72,12 @@ const { title } = Astro.props;
       "left-aside low-content right-aside"
       "footer footer footer";
       background-color: rgba(0, 0, 0, 0.972);
+
+    mask-image: url("assets/svg/billie_logo.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 250px;
+    animation: reveal 3s forwards ease-in-out;
   }
   body {
     /* bg-slate-950 de Tailwind */
@@ -103,6 +109,16 @@ const { title } = Astro.props;
         "right-aside"
         "low-content"
         "footer";
+    }
+  }
+
+  @keyframes reveal {
+    0% {
+      mask-size: 250px;
+    }
+
+    100% {
+      mask-size: 10000dvh;
     }
   }
 </style>
