@@ -40,6 +40,20 @@ const { title } = Astro.props;
  
   html {
     
+     background-color: #01002b; /* fondo oscuro base */
+     background: radial-gradient(
+    circle at 30% 30%,
+    rgb(0, 1, 10) 0%,
+    rgb(0, 0, 0) 60%,
+    rgb(4, 0, 54) 90%
+  );
+
+    body {
+      background-image: url("/assets/svg/mandala.svg");
+      background-clip: 250px;
+      z-index: 10;
+    }
+    
     font-family: system-ui, sans-serif;
     color: #ddd;
     text-align: center;
@@ -59,9 +73,12 @@ const { title } = Astro.props;
     right: 0;
     top: 0;
     z-index: -1;
+   
 
   }
   body {
+   
+   
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 45px auto auto auto 5rem;
@@ -71,9 +88,9 @@ const { title } = Astro.props;
       "left-aside main right-aside"
       "left-aside low-content right-aside"
       "footer footer footer";
-      background-color: rgba(0, 0, 0, 0.972);
-
+     
     mask-image: url("assets/svg/billie_logo.svg");
+    mask-position: center;
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 200px;
@@ -87,6 +104,8 @@ const { title } = Astro.props;
     mask-repeat: no-repeat;
     -webkit-mask-size: 250px;
     mask-size: 200px;
+
+
 }
   body {
     /* bg-slate-950 de Tailwind */
@@ -106,6 +125,8 @@ const { title } = Astro.props;
       Courier New,
       monospace;
   }
+
+   
 
   @media (max-width: 1020px) {
     body {
